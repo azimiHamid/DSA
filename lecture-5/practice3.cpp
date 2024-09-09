@@ -17,7 +17,7 @@ int sumOfDigits(int num) {
 
 int main() {
     int n = 456;
-    cout << "Sum of digits " << n << " = " << sumOfDigits(n) << endl;
+    cout << "Sum of digits of " << n << " is: " << sumOfDigits(n) << endl;
 
     return 0;
 }
