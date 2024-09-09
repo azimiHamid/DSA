@@ -9,7 +9,7 @@ int sumOfDigits(int num) {
 
     while(num > 0) {
         int lastDigit = num % 10;
-        num /= 10;
+        num = num / 10;
 
         digitSum += lastDigit;
     }
