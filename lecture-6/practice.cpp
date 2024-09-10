@@ -106,9 +106,8 @@ int main() {
         } else if (userChoice == 'B' || userChoice == 'b') {
             handleBinToDec();
         }
-
+          
         goAgain = shouldContinue();
-
     }
 
     return 0;
