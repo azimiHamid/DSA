@@ -50,9 +50,8 @@ char getUserChoice() {
         if (choice == 'A' || choice == 'B' || choice == 'a' || choice == 'b') {
             validInput = true;
         } else {
-            cout << "\n-------------------------\nInvalid input! Please enter A or B.\n-------------------------\n";
+            cout << "\n-----------------------------------\nInvalid input! Please enter A or B.\n-----------------------------------\n";
             cin.clear(); // Clear the error flag set by invalid input
-            cin.ignore(1000, '\n'); // Ignore the rest of the invalid input
         }
     }
     return choice;
@@ -106,7 +105,7 @@ int main() {
         } else if (userChoice == 'B' || userChoice == 'b') {
             handleBinToDec();
         }
-          
+
         goAgain = shouldContinue();
     }
 
