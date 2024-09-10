@@ -38,7 +38,7 @@ int main() {
         cout << "B) Change a Binary number to Decimal\n";
         cin >> userChoice;
 
-        int num;
+        double num;
         if (userChoice == 'A' || userChoice == 'a') {
             cout << "Please enter a Decimal number : ";
             cin >> num;
