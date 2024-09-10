@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-//* My Attempt
+//* GPT Solution
 // void decimalToBinary(int n) {
 //     string binary = "";
 
@@ -24,8 +24,7 @@ using namespace std;
 // }
 
 
-// SHKp method
-
+//* SHKp Solution
 // int decToBinary(int decNum) {
 //     int ans = 0, pow = 1;
 
@@ -52,7 +51,7 @@ using namespace std;
 
 
 
-// int result = 0, pow = 1;
+//* My Attempt
 
 int decToBin(int n) {
     int res = 0;
