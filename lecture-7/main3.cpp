@@ -13,7 +13,7 @@ int fun() {
 
 int main() {
 
-    int globalScopeVar = 786;
+    int globalScopeVar = 786; // Global scope
 
     fun();
 

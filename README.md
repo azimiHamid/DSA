@@ -115,6 +115,7 @@ Qs: Convert -8 to Binary and reverse.
 - Right Shift operator (>>)
 
 Let's have a look to some examples:
+
 <figure>
     <img src="./lecture-7/bitwise.png">
 </figure>
@@ -132,20 +133,44 @@ Let's have a look to some examples:
 </figure>
 
 ### Scope
+
 <b><code>Scope</code></b> is the area in a program where a variable is accessible. It determines where the variable can be used, whether inside a function (local scope) or throughout the entire program (global scope).
 
 - <b><code>Local scope</code></b>: Variables declared within a function or block can only be accessed within that specific function or block.
 - <b><code>Global scope</code></b>: Variables declared outside of all functions or blocks can be accessed from anywhere in the program.
 
 Examples for scope:
+
 <figure>
     <img src="./lecture-7/scope.png">
 </figure>
 
 ### Datatype modifiers
-- long
-- short
-- long long
-- signed
-- unsigned
+
+Modifiers are used to alter the size or range of data types to suit different use cases.
+
+- <b><code>long</code> (>= 4bytes)</b> : Used to store values larger than the typical size for int. It guarantees at least 4 bytes of storage.
+    ```
+    long int population = 790000000;
+    ```
+
+- <b><code>Short</code> (<= 2bytes)</b> : Used when you need to store small values and want to save memory. Common for values like age, where 2 bytes are sufficient. 
+    ```java
+    short int age = 21;
+    ```
+
+- <b><code>long long</code> (≥ 8 bytes)</b> : Used to store very large values that exceed the range of long, like populations of entire countries or global figures.
+    ```java
+    long long population = 7800000000;
+    ```
+
+- <b><code>Signed</code></b> : Specifies that a value can be either positive or negative. By default, int types are signed, so this is typically implicit unless you need to make it clear.
+    ```java
+    signed int temperature = -5; // Allows negative values
+    ```
+
+- <b><code>Unsigned</code></b> - Used when a value can only be non-negative, like IDs or counts. It extends the range of positive numbers since no space is used for storing negative values.
+    ```java
+    unsigned int customerId = 1202
+    ```
 
