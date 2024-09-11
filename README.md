@@ -150,7 +150,7 @@ Examples for scope:
 Modifiers are used to alter the size or range of data types to suit different use cases.
 
 - <b><code>long</code> (>= 4bytes)</b> : Used to store values larger than the typical size for int. It guarantees at least 4 bytes of storage.
-    ```
+    ```java
     long int population = 790000000;
     ```
 
