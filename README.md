@@ -96,15 +96,34 @@ Qs: Convert -8 to Binary and reverse.
   <br>finally : &nbsp; <code>(-12)<sub>10</sub> = (10100)<sub>2</sub></code>
 
 <br> <b>Let's make it reverse:</b>
+
 - <code>10100</code>
 - 01011
 - 01011 + 1 = <code>01100</code>
-- <code>(1100)<sub>2</sub> = (12)<sub>10</sub></code> 
-<br> Because, <code>10100</code> starts with 1 so it's decimal form has a negative sign <code>(-12)<sub>10</sub></code> <br>
-<code>(1100)<sub>2</sub> = (-12)<sub>10</sub></code>
+- <code>(1100)<sub>2</sub> = (12)<sub>10</sub></code>
+  <br> Because, <code>10100</code> starts with 1 so it's decimal form has a negative sign <code>(-12)<sub>10</sub></code> <br>
+  <code>(1100)<sub>2</sub> = (-12)<sub>10</sub></code>
 
+## Chapter 7 - Bitwise operators, Scope, Datatype modifiers
 
+### Bitwise Operators
 
+- AND ( & )
+- OR ( | )
+- XOR ( ^ ) --> (Exclusive OR)
+- Left Shift operator (<<)
+- Right Shift operator (>>)
 
-## Chapter 6 - Bitwise operators, Datatype modifiers
-### 
+### Operators precedence
+
+- look at the following chart:
+<figure>
+    <img src="./lecture-7/Operator Precedence.png">
+</figure>
+
+### Scope
+<b><code>Scope</code></b> is the area in a program where a variable is accessible. It determines where the variable can be used, whether inside a function (local scope) or throughout the entire program (global scope).
+
+- <b><code>Local scope</code></b>: Variables declared within a function or block can only be accessed within that specific function or block.
+- <b><code>Global scope</code></b>: Variables declared outside of all functions or blocks can be accessed from anywhere in the program.
+
