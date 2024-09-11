@@ -114,11 +114,21 @@ Qs: Convert -8 to Binary and reverse.
 - Left Shift operator (<<)
 - Right Shift operator (>>)
 
+Let's have a look to some examples:
+<figure>
+    <img src="./lecture-7/bitwise.png">
+</figure>
+
 ### Operators precedence
 
 - look at the following chart:
 <figure>
-    <img src="./lecture-7/Operator Precedence.png">
+    <img src="./lecture-7/Operator Precedence.png" >
+</figure>
+
+- Let's have a look to an example of <code>operator precedence</code>:
+<figure>
+    <img src="./lecture-7/operator preced....png" >
 </figure>
 
 ### Scope
@@ -126,4 +136,16 @@ Qs: Convert -8 to Binary and reverse.
 
 - <b><code>Local scope</code></b>: Variables declared within a function or block can only be accessed within that specific function or block.
 - <b><code>Global scope</code></b>: Variables declared outside of all functions or blocks can be accessed from anywhere in the program.
+
+Examples for scope:
+<figure>
+    <img src="./lecture-7/scope.png">
+</figure>
+
+### Datatype modifiers
+- long
+- short
+- long long
+- signed
+- unsigned
 
