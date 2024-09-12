@@ -11,6 +11,8 @@ int main() {
     int smallestIdx = 0;
     int largestIdx = 0;
 
+    // The loop starts from i = 1 
+    // as the initial values at i = 0 are already considered in nums[smallestIdx].
     for (int i = 1; i < size; i++) {
         if (nums[i] < nums[smallestIdx]) {
             smallestIdx = i;
@@ -20,8 +22,8 @@ int main() {
         }
     }
 
-    cout << "Index of smallest num = " << smallestIdx << ": " << nums[smallestIdx] << endl;
-    cout << "Index of largest num = " << largestIdx << ": " << nums[largestIdx] << endl;
+    cout << "Index of smallest num = " << smallestIdx << ": " << nums[smallestIdx] << endl; // 4: -15
+    cout << "Index of largest num = " << largestIdx << ": " << nums[largestIdx] << endl; // 5: 32
 
     return 0;
 }
