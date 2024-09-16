@@ -3,8 +3,8 @@
 #include <vector>
 using namespace std;
 
-int singleNumber(vector<int> &nums) {
-    int uniqueVal = 0;
+int singleNumber(vector<int> &nums) {  // using & at the beginning of nums means pass by reference,
+    int uniqueVal = 0;                 // without & it means pass by value.
 
     for (int num: nums) {
         uniqueVal = uniqueVal ^ num; 
