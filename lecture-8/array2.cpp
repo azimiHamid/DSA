@@ -9,7 +9,7 @@ int main() {
     int marks[size];
 
     // Calculate the size of the array in elements.
-    int sz = sizeof(marks) / sizeof(int); // Total bytes / bytes per int = 20 / 4 = 5
+    int sz = sizeof(marks) / sizeof(marks[0]); // Total bytes / bytes per int = 20 / 4 = 5
     // The array has 5 elements, each int takes 4 bytes in memory.
 
     // Input values into the array.

@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
 
-    std::vector<int> vec;
+    vector<int> vec;
     vec.push_back(0);
     vec.push_back(1);
     vec.push_back(2);

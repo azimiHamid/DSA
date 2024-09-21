@@ -5,9 +5,9 @@ using namespace std;
 
 int main() {
 
-    std::vector<char> vec2 = {'a', 'B', 'c', 'd', 'e'}; // Vector elements are initialized with custom values.
-    std::vector<int> vec1(3); // Vector declared with an initial size of 3. Elements are initialized with default values (0 for int).
-    std::vector<int> vec; // Vector declared without an initial size. Elements will be added dynamically.
+    vector<char> vec2 = {'a', 'B', 'c', 'd', 'e'}; // Vector elements are initialized with custom values.
+    vector<int> vec1(3); // Vector declared with an initial size of 3. Elements are initialized with default values (0 for int).
+    vector<int> vec; // Vector declared without an initial size. Elements will be added dynamically.
 
     vec.push_back(0); // Adds the value 0 to the vector (dynamic resizing).
     vec.push_back(1); // Adds the value 1 to the vector (dynamic resizing).
