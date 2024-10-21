@@ -27,7 +27,8 @@ int painterPartition(vector<int> &arr, int n, int m) {
         sum += val;
     }
 
-    int st = max(arr[0], arr[2]);
+    // Use vector iterators instead of pointer arithmetic
+    int st = *max_element(arr.begin(), arr.end());
     int end = sum;
     int ans = -1;
 
@@ -43,7 +44,6 @@ int painterPartition(vector<int> &arr, int n, int m) {
 
     return ans;
 }
-
 
 int main() {
     vector<int> arr = {40, 30, 10, 20};
