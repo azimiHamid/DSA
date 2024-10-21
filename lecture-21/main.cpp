@@ -15,8 +15,9 @@ bool isValid(vector<int> &arr, int n, int m, int mid) {
         else { students++;  pages = currPages; }
     }
 
-    return students > m ? false : true;
+    return students > m ? false : true; // if more than the given students needed so it's not valid and returns false.
 }
+
 
 int allocateBooks(vector<int> &arr, int n, int m) {
 
@@ -31,10 +32,10 @@ int allocateBooks(vector<int> &arr, int n, int m) {
     int ans = -1;
     while (st <= end) {
         int mid = st + (end-st)/2;
-        if (isValid(arr, n, m, mid)) { // go left
+        if (isValid(arr, n, m, mid)) { // search left
             ans = mid;
             end = mid - 1;
-        } else { // go right
+        } else { // search right
             st = mid + 1;
         }
     }
