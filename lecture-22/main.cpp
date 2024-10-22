@@ -2,7 +2,6 @@
 
 #include <iostream>
 #include <vector>
-#include <algorithm>
 using namespace std;
 
 bool isPossible(vector<int> arr, int n, int m, int mid) {
@@ -18,17 +17,17 @@ bool isPossible(vector<int> arr, int n, int m, int mid) {
         }
     }
 
-    return painters <= m ? true : false; // if painters don't exceed the given members so return true otherwise false.
+    return painters <= m; // if painters don't exceed the given members so return true otherwise false.
 }
 
-int painterPartition(vector<int> &arr, int n, int m) {
-    int sum = 0;
+int minTimeToPaint(vector<int> &arr, int n, int m) {
+    int sum = 0, maxVal = INT_MIN;
     for (int val : arr) {
         sum += val;
+        maxVal = max(val, maxVal);
     }
 
-    // Use vector iterators instead of pointer arithmetic
-    int st = *max_element(arr.begin(), arr.end());
+    int st = maxVal;
     int end = sum;
     int ans = -1;
 
@@ -50,7 +49,7 @@ int main() {
     int n = arr.size();
     int m = 2;
 
-    cout << painterPartition(arr, n, m) << endl;
+    cout << minTimeToPaint(arr, n, m) << endl;
 
     return 0;
 }
