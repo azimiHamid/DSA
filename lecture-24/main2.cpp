@@ -4,21 +4,19 @@
 #include <vector>
 using namespace std;
 
-void selectionSort(vector<int> &arr) {
+void selectionSort(vector<int>& arr) {
     int n = arr.size();
-    for (int i = 0; i < n-1; i++) {
-
-        int smallestIdx = i;
-
-        for (int j = i+1; j < n; j++) {
-            if (arr[j] < arr[smallestIdx]) {
-                smallestIdx = j;
+    for (int i = 0; i < n - 1; i++) {
+        int minIndex = i;  // Assume the current position is the minimum
+        for (int j = i + 1; j < n; j++) {  // Find the minimum element in unsorted part
+            // if (arr[j] > arr[minIndex]) {  // Descending
+            if (arr[j] < arr[minIndex]) {
+                minIndex = j;  // Update the minimum element's index
             }
         }
-
-        swap(arr[i], arr[smallestIdx]);
+        // Swap the minimum element with the first element in unsorted part
+        swap(arr[i], arr[minIndex]);
     }
-
 }
 
 int main() {
