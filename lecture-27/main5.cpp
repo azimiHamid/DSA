@@ -56,7 +56,7 @@ int main() {
     }
 
     // Using a pair inside another pair
-    pair<int, pair<string, double>> p6 = make_pair(10, make_pair("Cherry", 2.5));
+    pair<int, pair<string, double>> p6 = {10, {"Cherry", 2.5}};
     cout << "Nested pair p6: (" << p6.first << ", (" << p6.second.first << ", " << p6.second.second << "))" << endl;
 
     // Iterating over a pair with a for loop
@@ -68,9 +68,9 @@ int main() {
 
     // Vector of pairs - useful when storing multiple related values in one structure
     vector<pair<int, string>> products;
-    products.push_back(make_pair(101, "Laptop"));
-    products.push_back(make_pair(102, "Smartphone"));
-    products.push_back(make_pair(103, "Tablet"));
+    products.push_back({101, "Laptop"});
+    products.push_back({102, "Smartphone"});
+    products.emplace_back(103, "Tablet"); // Adds a product directly in-place using emplace_back, avoiding extra copy
 
     cout << "\nProduct list:" << endl;
     for (const auto& product : products) {
