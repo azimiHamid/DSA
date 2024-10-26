@@ -9,7 +9,7 @@ list - A doubly-linked list container:
  - pop_front():    Remove first element
 
 Other Methods Available:
- - Similar to vectors, lists also have methods like size(), begin(), end(), rbegin(), rend(), front(), back(), erase(), insert(), clear(), empty(), etc.
+ - Similar to vectors, lists also have methods like size(), begin(), end(), rbegin(), rend(), front(), back(), erase(), insert(), clear()
 */
 
 #include <iostream>
