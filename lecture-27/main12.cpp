@@ -36,11 +36,12 @@ int main() {
     // upper_bound(x): Returns an iterator to the first element that is > x
     // - If x exists in the set, it returns an iterator to the next higher element.
     // - If x does not exist, it still returns an iterator to the first element greater than x or s.end() if no such element exists.
-    auto ub = s.upper_bound(3);
+    // *Upper bound's value should be greater than key, here key=4, so upper_bound=5
+    auto ub = s.upper_bound(4);
     if (ub != s.end()) {
-        cout << "Upper bound of 3: " << *ub << endl; // 5 (next higher number after 3)
+        cout << "Upper bound of 4: " << *ub << endl; // 5 (next higher number after 3)
     } else {
-        cout << "Upper bound of 3 not found\n";
+        cout << "Upper bound of 4 not found\n";
     }
 
     // Displaying all elements in the set
