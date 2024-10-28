@@ -15,11 +15,15 @@ string removeOccurrences(string s, string part) {
 }
 
 int main() {
-    string str = "daabcbaabcbc";
-    string part = "abc";
-    string res = removeOccurrences(str, part);
+    string str1 = "daabcbaabcbc";
+    string part1 = "abc";
+    string res1 = removeOccurrences(str1, part1); // "dab"
 
-    cout << res << endl;
+    string str2 = "HelloHello";
+    string part2 = "Hello";
+    string res2 = removeOccurrences(str1, part1);
+
+    cout << res2 << endl; // empty string
 
     return 0;
 }
