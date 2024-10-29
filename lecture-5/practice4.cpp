@@ -24,7 +24,7 @@ int nCr(int n, int r) {
 int main() {
 
     int n = 8, r = 2;
-    cout << "nCr for n=" <<n << " & r=" << r << " is: " << nCr(n, r) << endl;
+    cout << "nCr for n=" << n << " & r=" << r << " is: " << nCr(n, r) << endl;
 
     return 0;
 }

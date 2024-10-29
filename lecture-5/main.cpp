@@ -1,5 +1,4 @@
 #include <iostream>
-
 using namespace std;
 
 // This function does not return any value (void).
