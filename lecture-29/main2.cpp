@@ -27,3 +27,7 @@ int main() {
 
     return 0;
 }
+
+// TIPS: ---->
+// s.find(part): Finds the starting index of the first occurrence of part in s.
+// s.erase(start, length): Removes a portion of s starting at start with a specified length.
