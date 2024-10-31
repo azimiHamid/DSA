@@ -4,17 +4,16 @@
 #include <algorithm>
 using namespace std;
 
-string reverseWords(string s)
-{
-    int n = s.length();
+string reverseWords(string str) {
+    int n = str.length();
     string ans = "";
 
-    reverse(s.begin(), s.end());
+    reverse(str.begin(), str.end());
 
     for (int i = 0; i < n; i++) {
         string word = "";
-        while (i < n && s[i] != ' ') {
-            word += s[i];
+        while (i < n && str[i] != ' ') {
+            word += str[i];
             i++;
         }
 
@@ -24,15 +23,14 @@ string reverseWords(string s)
         }
     }
 
-    return ans.substr(1); 
+    return ans.substr(1);
 }
 
+int main() {
 
-int main()
-{
-    string s = "The sky is blue";
-    string str = reverseWords(s);
-    
-    cout << str << endl;
+    string s = "Blue is Sky The";
+    string result = reverseWords(s);
+    cout << result << endl; // The Sky is Blue
+
     return 0;
 }
